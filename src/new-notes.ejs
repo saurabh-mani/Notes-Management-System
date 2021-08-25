@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Welcome</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <span class="usr">Welcome <%= usr %></span>
+            <a href="/welcome">Home</a>
+            <a href="#">New Notes</a>
+            <a href="/logout">Logout</a>
+        </nav>
+        <div class="box1">
+            <h3 class="box-title"> New Notes</h3><br>
+            <form action="" method="post">
+                <input type="text" name="ntsTtl" class="input-box" placeholder="Enter Notes Title..." required><br>
+                <textarea name="nts" class="input-box" placeholder="Enter your Notes..." required></textarea><br>
+                <input type="submit" value="Save Notes" class="btn-blue">
+            </form><br>
+            <span class=<%= clr %>><%= msg %></span>
+        </div>
+    </div>
+</body>
+</html>

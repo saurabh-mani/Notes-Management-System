@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Welcome</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <span class="usr">Welcome <%= usr %></span>
+            <a href="#">Home</a>
+            <a href="/NewNotes">New Notes</a>
+            <a href="/logout">Logout</a>
+        </nav>
+        <% let url1 = "/edit-notes/?id=";
+            let url2 = "/delete-notes/?id=";
+            for(let i=0;i<rows.length;i++){
+        %>
+                
+                <div class="note">
+                    <%= rows[i].title %><br><br>
+                    <a class="note-link" href=<%= url1+rows[i].notesid %>>Edit</a>
+                    <a class="note-link" href=<%= url2+rows[i].notesid %>>Delete</a>
+                </div>
+        <%
+            }
+        %>
+    </div>
+</body>
+</html>

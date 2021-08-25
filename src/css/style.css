@@ -1,0 +1,80 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.box1{
+    margin: auto;
+    width: 350px;
+    align-items: center;
+    text-align: center;
+}
+.input-box{
+    border: solid 1px #c9c9c9;
+    border-radius: 25px;
+    width: 300px;
+    padding: 7px;
+}
+.btn-blue{
+    border: none;
+    border-radius: 25px;
+    padding: 7px;
+    width: 300px;
+    background-color: #5858d6;
+    color: #b3b3ff;
+}
+.msg-red{
+    color: #7e1f1f;
+    background-color: #ffb1b1;
+    border-color: #7e1f1f;
+    border:1px solid;
+    border-radius: 25px;
+    padding: 5px;
+}
+.msg-green{
+    color: #197a19;
+    background-color: #a8e6a8;
+    border-color: #197a19;
+    border:1px solid;
+    border-radius: 25px;
+    padding: 5px;
+}
+.link1{
+    text-decoration: none;
+    color: #000000;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #1f717e;
+}
+.nav{
+    background: #123456;
+    color: #3491ee;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.usr{
+    font-weight: bold;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+.nav a{
+    text-decoration: none;
+    color: #3491ee;
+    padding: 10px;
+}
+.nav a:hover{
+    background: #3491ee;
+    color: #123456;
+    border-radius: 25px;
+}
+.note{
+    border: solid #000000;
+    margin: 5px;
+    padding: 5px;
+}
+.note-link{
+    text-decoration: none;
+    color: #123456;
+}
