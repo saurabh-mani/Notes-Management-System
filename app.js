@@ -8,7 +8,7 @@ const con = mysql.createConnection({
     password: 'saumani',
     database: 'notes_01'
 });
-
+let port = process.env.PORT || 8080;
 const app = express();
 const urlenc = express.urlencoded({extended:false});
 
@@ -213,7 +213,7 @@ app.get('/logout',(req,res)=>{
     res.redirect('/');
 });
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('App is running in port 3000');
 });
 
