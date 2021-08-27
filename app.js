@@ -3,10 +3,10 @@ const session = require('express-session');
 const bcrypt = require('bcrypt');
 const mysql = require('mysql');
 const con = mysql.createConnection({
-    host:'localhost',
+    host:'https://databases-auth.000webhost.com/db_structure.php?server=1&db=id17493053_notes_01',
     user: 'saumani',
-    password: 'saumani',
-    database: 'notes_01'
+    password: '7Nt(GA<p_@1|aD>J',
+    database: 'id17493053_notes_01"'
 });
 let port = process.env.PORT || 8080;
 const app = express();
