@@ -1,0 +1,111 @@
+2021-08-27T16:15:20.411228+00:00 app[web.1]: Error: connect ECONNREFUSED 127.0.0.1:3306
+2021-08-27T16:15:20.411229+00:00 app[web.1]: at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1148:16)
+2021-08-27T16:15:20.411229+00:00 app[web.1]: --------------------
+2021-08-27T16:15:20.411229+00:00 app[web.1]: at Protocol._enqueue (/app/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+2021-08-27T16:15:20.411230+00:00 app[web.1]: at Protocol.handshake (/app/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+2021-08-27T16:15:20.411230+00:00 app[web.1]: at Connection.connect (/app/node_modules/mysql/lib/Connection.js:116:18)
+2021-08-27T16:15:20.411230+00:00 app[web.1]: at Connection._implyConnect (/app/node_modules/mysql/lib/Connection.js:454:10)
+2021-08-27T16:15:20.411232+00:00 app[web.1]: at Connection.query (/app/node_modules/mysql/lib/Connection.js:196:8)
+2021-08-27T16:15:20.411232+00:00 app[web.1]: at /app/app.js:37:9
+2021-08-27T16:15:20.411235+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2021-08-27T16:15:20.411235+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/route.js:137:13)
+2021-08-27T16:15:20.411236+00:00 app[web.1]: at /app/node_modules/body-parser/lib/read.js:130:5
+2021-08-27T16:15:20.411236+00:00 app[web.1]: at invokeCallback (/app/node_modules/raw-body/index.js:224:16) {
+2021-08-27T16:15:20.411236+00:00 app[web.1]: errno: -111,
+2021-08-27T16:15:20.411237+00:00 app[web.1]: code: 'ECONNREFUSED',
+2021-08-27T16:15:20.411237+00:00 app[web.1]: syscall: 'connect',
+2021-08-27T16:15:20.411237+00:00 app[web.1]: address: '127.0.0.1',
+2021-08-27T16:15:20.411237+00:00 app[web.1]: port: 3306,
+2021-08-27T16:15:20.411238+00:00 app[web.1]: fatal: true
+2021-08-27T16:15:20.411238+00:00 app[web.1]: }
+2021-08-27T16:15:20.415570+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=POST path="/" host=notes-management-system.herokuapp.com request_id=47cf1a9c-90ea-4124-bb4d-1d69763988cb fwd="157.44.218.84" dyno=web.1 connect=0ms service=31ms status=503 bytes=0 protocol=https
+2021-08-27T16:15:20.419630+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2021-08-27T16:15:20.419818+00:00 app[web.1]: npm ERR! errno 1
+2021-08-27T16:15:20.423412+00:00 app[web.1]: npm ERR! proj04_expensemanagementsystem@1.0.0 start: `node app.js`
+2021-08-27T16:15:20.423459+00:00 app[web.1]: npm ERR! Exit status 1
+2021-08-27T16:15:20.423521+00:00 app[web.1]: npm ERR!
+2021-08-27T16:15:20.423570+00:00 app[web.1]: npm ERR! Failed at the proj04_expensemanagementsystem@1.0.0 start script.
+2021-08-27T16:15:20.423614+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2021-08-27T16:15:20.453576+00:00 app[web.1]: 
+2021-08-27T16:15:20.453655+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2021-08-27T16:15:20.453684+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2021-08-27T16_15_20_424Z-debug.log
+2021-08-27T16:15:20.505077+00:00 heroku[web.1]: Process exited with status 1
+2021-08-27T16:15:20.589381+00:00 heroku[web.1]: State changed from up to crashed
+2021-08-27T16:22:14.718700+00:00 heroku[web.1]: State changed from crashed to starting
+2021-08-27T16:22:16.955564+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-08-27T16:22:19.296995+00:00 app[web.1]: 
+2021-08-27T16:22:19.297014+00:00 app[web.1]: > proj04_expensemanagementsystem@1.0.0 start /app
+2021-08-27T16:22:19.297015+00:00 app[web.1]: > node app.js
+2021-08-27T16:22:19.297015+00:00 app[web.1]: 
+2021-08-27T16:22:19.505468+00:00 app[web.1]: Warning: connect.session() MemoryStore is not
+2021-08-27T16:22:19.505469+00:00 app[web.1]: designed for a production environment, as it will leak
+2021-08-27T16:22:19.505469+00:00 app[web.1]: memory, and will not scale past a single process.
+2021-08-27T16:22:19.509816+00:00 app[web.1]: App is running in port 3000
+2021-08-27T16:22:19.619301+00:00 heroku[web.1]: State changed from starting to up
+2021-08-27T16:24:05.000000+00:00 app[api]: Build started by user saurabh.mani.12@gmail.com
+2021-08-27T16:24:27.402463+00:00 app[api]: Deploy 1aeade48 by user saurabh.mani.12@gmail.com
+2021-08-27T16:24:27.402463+00:00 app[api]: Release v5 created by user saurabh.mani.12@gmail.com
+2021-08-27T16:24:27.725879+00:00 heroku[web.1]: Restarting
+2021-08-27T16:24:27.798601+00:00 heroku[web.1]: State changed from up to starting
+2021-08-27T16:24:28.000000+00:00 app[api]: Build succeeded
+2021-08-27T16:24:28.425320+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2021-08-27T16:24:28.711542+00:00 heroku[web.1]: Process exited with status 143
+2021-08-27T16:24:29.824764+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-08-27T16:24:32.285426+00:00 app[web.1]: 
+2021-08-27T16:24:32.285444+00:00 app[web.1]: > proj04_expensemanagementsystem@1.0.0 start /app
+2021-08-27T16:24:32.285444+00:00 app[web.1]: > node app.js
+2021-08-27T16:24:32.285445+00:00 app[web.1]: 
+2021-08-27T16:24:32.618926+00:00 app[web.1]: Warning: connect.session() MemoryStore is not
+2021-08-27T16:24:32.618949+00:00 app[web.1]: designed for a production environment, as it will leak
+2021-08-27T16:24:32.618950+00:00 app[web.1]: memory, and will not scale past a single process.
+2021-08-27T16:24:32.623737+00:00 app[web.1]: App is running in port 3000
+2021-08-27T16:24:33.548060+00:00 heroku[web.1]: State changed from starting to up
+2021-08-27T16:24:37.255235+00:00 heroku[router]: at=info method=GET path="/" host=notes-management-system.herokuapp.com request_id=a8168681-79a6-4c81-9388-80d02ea3110c fwd="157.44.218.84" dyno=web.1 connect=0ms service=25ms status=200 bytes=1213 protocol=https
+2021-08-27T16:24:37.792977+00:00 heroku[router]: at=info method=GET path="/css/style.css" host=notes-management-system.herokuapp.com request_id=70ca5f92-44a5-44fb-b8fb-b81f6213ebd8 fwd="157.44.218.84" dyno=web.1 connect=0ms service=3ms status=200 bytes=1618 protocol=https
+2021-08-27T16:24:47.691540+00:00 app[web.1]: /app/app.js:38
+2021-08-27T16:24:47.691548+00:00 app[web.1]: if(err0) throw err0;
+2021-08-27T16:24:47.691548+00:00 app[web.1]: ^
+2021-08-27T16:24:47.691549+00:00 app[web.1]: 
+2021-08-27T16:24:47.691549+00:00 app[web.1]: Error: getaddrinfo ENOTFOUND https://databases-auth.000webhost.com/db_structure.php?server=1&db=id17493053_notes_01
+2021-08-27T16:24:47.691551+00:00 app[web.1]: at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:69:26)
+2021-08-27T16:24:47.691551+00:00 app[web.1]: --------------------
+2021-08-27T16:24:47.691551+00:00 app[web.1]: at Protocol._enqueue (/app/node_modules/mysql/lib/protocol/Protocol.js:144:48)
+2021-08-27T16:24:47.691552+00:00 app[web.1]: at Protocol.handshake (/app/node_modules/mysql/lib/protocol/Protocol.js:51:23)
+2021-08-27T16:24:47.691552+00:00 app[web.1]: at Connection.connect (/app/node_modules/mysql/lib/Connection.js:116:18)
+2021-08-27T16:24:47.691552+00:00 app[web.1]: at Connection._implyConnect (/app/node_modules/mysql/lib/Connection.js:454:10)
+2021-08-27T16:24:47.691553+00:00 app[web.1]: at Connection.query (/app/node_modules/mysql/lib/Connection.js:196:8)
+2021-08-27T16:24:47.691553+00:00 app[web.1]: at /app/app.js:37:9
+2021-08-27T16:24:47.691553+00:00 app[web.1]: at Layer.handle [as handle_request] (/app/node_modules/express/lib/router/layer.js:95:5)
+2021-08-27T16:24:47.691554+00:00 app[web.1]: at next (/app/node_modules/express/lib/router/route.js:137:13)
+2021-08-27T16:24:47.691555+00:00 app[web.1]: at /app/node_modules/body-parser/lib/read.js:130:5
+2021-08-27T16:24:47.691555+00:00 app[web.1]: at invokeCallback (/app/node_modules/raw-body/index.js:224:16) {
+2021-08-27T16:24:47.691555+00:00 app[web.1]: errno: -3008,
+2021-08-27T16:24:47.691556+00:00 app[web.1]: code: 'ENOTFOUND',
+2021-08-27T16:24:47.691556+00:00 app[web.1]: syscall: 'getaddrinfo',
+2021-08-27T16:24:47.691556+00:00 app[web.1]: hostname: 'https://databases-auth.000webhost.com/db_structure.php?server=1&db=id17493053_notes_01',
+2021-08-27T16:24:47.691557+00:00 app[web.1]: fatal: true
+2021-08-27T16:24:47.691557+00:00 app[web.1]: }
+2021-08-27T16:24:47.706598+00:00 heroku[router]: at=error code=H13 desc="Connection closed without response" method=POST path="/" host=notes-management-system.herokuapp.com request_id=c3b1888e-07af-4eb2-b07c-fef3f4c2e926 fwd="157.44.218.84" dyno=web.1 connect=0ms service=34ms status=503 bytes=0 protocol=https
+2021-08-27T16:24:47.710560+00:00 app[web.1]: npm ERR! code ELIFECYCLE
+2021-08-27T16:24:47.710933+00:00 app[web.1]: npm ERR! errno 1
+2021-08-27T16:24:47.713865+00:00 app[web.1]: npm ERR! proj04_expensemanagementsystem@1.0.0 start: `node app.js`
+2021-08-27T16:24:47.713941+00:00 app[web.1]: npm ERR! Exit status 1
+2021-08-27T16:24:47.714035+00:00 app[web.1]: npm ERR!
+2021-08-27T16:24:47.714111+00:00 app[web.1]: npm ERR! Failed at the proj04_expensemanagementsystem@1.0.0 start script.
+2021-08-27T16:24:47.714206+00:00 app[web.1]: npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2021-08-27T16:24:47.719534+00:00 app[web.1]: 
+2021-08-27T16:24:47.719643+00:00 app[web.1]: npm ERR! A complete log of this run can be found in:
+2021-08-27T16:24:47.719678+00:00 app[web.1]: npm ERR!     /app/.npm/_logs/2021-08-27T16_24_47_714Z-debug.log
+2021-08-27T16:24:47.781950+00:00 heroku[web.1]: Process exited with status 1
+2021-08-27T16:24:48.024051+00:00 heroku[web.1]: State changed from up to crashed
+2021-08-27T17:00:31.227073+00:00 heroku[web.1]: State changed from crashed to starting
+2021-08-27T17:00:33.738454+00:00 heroku[web.1]: Starting process with command `npm start`
+2021-08-27T17:00:36.416129+00:00 app[web.1]: 
+2021-08-27T17:00:36.416138+00:00 app[web.1]: > proj04_expensemanagementsystem@1.0.0 start /app
+2021-08-27T17:00:36.416138+00:00 app[web.1]: > node app.js
+2021-08-27T17:00:36.416138+00:00 app[web.1]: 
+2021-08-27T17:00:36.761853+00:00 app[web.1]: Warning: connect.session() MemoryStore is not
+2021-08-27T17:00:36.761855+00:00 app[web.1]: designed for a production environment, as it will leak
+2021-08-27T17:00:36.761856+00:00 app[web.1]: memory, and will not scale past a single process.
+2021-08-27T17:00:36.767019+00:00 app[web.1]: App is running in port 3000
+2021-08-27T17:00:37.924562+00:00 heroku[web.1]: State changed from starting to up
